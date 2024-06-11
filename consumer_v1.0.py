@@ -7,6 +7,7 @@ Date: June 11, 2024
 """
 
 import pika
+import sys
 import json
 import logging
 from util_logger import setup_logger
