@@ -13,9 +13,9 @@ import webbrowser
 import json
 from faker import Faker
 import logging
-import random  # Add this import
+import random  
 from util_logger import setup_logger
-from datetime import datetime  # Add this import
+from datetime import datetime  
 
 # Set up logger
 logger, logname = setup_logger(__file__)
