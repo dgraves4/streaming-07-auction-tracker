@@ -1,11 +1,11 @@
-2024-06-11 15:59:44,102.producer_v1.0.INFO ==================================================
-2024-06-11 15:59:44,102.producer_v1.0.INFO Today is 2024-06-11 at 03:59 PM
-2024-06-11 15:59:44,102.producer_v1.0.INFO Running on: nt Windows 11
-2024-06-11 15:59:44,102.producer_v1.0.INFO Python version:  3.12.2
-2024-06-11 15:59:44,103.producer_v1.0.INFO Python path: C:\Users\derek\OneDrive\Documents\Streaming Data\Week 7\streaming-07-auction-tracker\.venv
-2024-06-11 15:59:44,103.producer_v1.0.INFO Working dir: C:\Users\derek\OneDrive\Documents\Streaming Data\Week 7\streaming-07-auction-tracker
-2024-06-11 15:59:44,103.producer_v1.0.INFO ==================================================
-2024-06-11 15:59:49,541.producer_v1.0.INFO Opened RabbitMQ Admin site.
-2024-06-11 15:59:49,628.producer_v1.0.DEBUG Generated fake bid: {'bidder_id': '5f54c209-a83f-4d93-a2a2-68de2fa03da3', 'bid_amount': 780.73, 'timestamp': '2024-06-11T22:59:49.627462', 'item': 'there', 'bidder_name': 'Edward Kim', 'bidder_email': 'washingtonjacob@example.net'}
-2024-06-11 15:59:49,682.producer_v1.0.INFO Sent message: {'bidder_id': '5f54c209-a83f-4d93-a2a2-68de2fa03da3', 'bid_amount': 780.73, 'timestamp': '2024-06-11T22:59:49.627462', 'item': 'there', 'bidder_name': 'Edward Kim', 'bidder_email': 'washingtonjacob@example.net'}
-2024-06-11 15:59:49,687.producer_v1.0.INFO Closed RabbitMQ connection.
+2024-06-11 16:10:12,550.producer_v1.0.INFO ==================================================
+2024-06-11 16:10:12,551.producer_v1.0.INFO Today is 2024-06-11 at 04:10 PM
+2024-06-11 16:10:12,551.producer_v1.0.INFO Running on: nt Windows 11
+2024-06-11 16:10:12,551.producer_v1.0.INFO Python version:  3.12.2
+2024-06-11 16:10:12,551.producer_v1.0.INFO Python path: C:\Users\derek\OneDrive\Documents\Streaming Data\Week 7\streaming-07-auction-tracker\.venv
+2024-06-11 16:10:12,551.producer_v1.0.INFO Working dir: C:\Users\derek\OneDrive\Documents\Streaming Data\Week 7\streaming-07-auction-tracker
+2024-06-11 16:10:12,551.producer_v1.0.INFO ==================================================
+2024-06-11 16:10:24,702.producer_v1.0.INFO Opened RabbitMQ Admin site.
+2024-06-11 16:10:24,794.producer_v1.0.DEBUG Generated fake bid: {'bidder_id': 'bea646f2-79b4-48b1-b1e3-ad22ac043283', 'bid_amount': 870.1, 'timestamp': '2024-06-11T23:10:24.793499', 'item': 'indicate', 'bidder_name': 'Chad Velasquez', 'bidder_email': 'jacobjohnson@example.org'}
+2024-06-11 16:10:24,822.producer_v1.0.INFO Sent message: {'bidder_id': 'bea646f2-79b4-48b1-b1e3-ad22ac043283', 'bid_amount': 870.1, 'timestamp': '2024-06-11T23:10:24.793499', 'item': 'indicate', 'bidder_name': 'Chad Velasquez', 'bidder_email': 'jacobjohnson@example.org'}
+2024-06-11 16:10:24,824.producer_v1.0.INFO Closed RabbitMQ connection.
