@@ -1,0 +1,10 @@
+2024-06-11 16:00:19,693.consumer_v1.0.INFO ==================================================
+2024-06-11 16:00:19,693.consumer_v1.0.INFO Today is 2024-06-11 at 04:00 PM
+2024-06-11 16:00:19,693.consumer_v1.0.INFO Running on: nt Windows 11
+2024-06-11 16:00:19,693.consumer_v1.0.INFO Python version:  3.12.2
+2024-06-11 16:00:19,693.consumer_v1.0.INFO Python path: C:\Users\derek\OneDrive\Documents\Streaming Data\Week 7\streaming-07-auction-tracker\.venv
+2024-06-11 16:00:19,693.consumer_v1.0.INFO Working dir: C:\Users\derek\OneDrive\Documents\Streaming Data\Week 7\streaming-07-auction-tracker
+2024-06-11 16:00:19,694.consumer_v1.0.INFO ==================================================
+2024-06-11 16:00:19,706.consumer_v1.0.INFO Starting consumer. Waiting for messages...
+2024-06-11 16:00:19,706.consumer_v1.0.INFO Received message: {'bidder_id': '5f54c209-a83f-4d93-a2a2-68de2fa03da3', 'bid_amount': 780.73, 'timestamp': '2024-06-11T22:59:49.627462', 'item': 'there', 'bidder_name': 'Edward Kim', 'bidder_email': 'washingtonjacob@example.net'}
+2024-06-11 16:03:09,772.consumer_v1.0.INFO Consumer interrupted. Closing connection.
