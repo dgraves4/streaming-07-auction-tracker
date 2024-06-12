@@ -1,19 +1,26 @@
 """
-Real-Time Auction Tracker: Basic Consumer Script
-This script reads bid messages from a RabbitMQ queue and logs them.
+Real-Time Auction Tracker: Enhanced Consumer Script
+This script reads bid messages from multiple RabbitMQ queues and logs them.
 
 Author: Derek Graves
 Date: June 11, 2024
 """
 
 import pika
-import sys
 import json
 import logging
+import sys
 from util_logger import setup_logger
 
 # Set up logger
 logger, logname = setup_logger(__file__)
+
+# Define queues for different auction items
+QUEUE_CONFIG = {
+    'auction_queue_electronics': 'electronics',
+    'auction_queue_furniture': 'furniture',
+    'auction_queue_art': 'art'
+}
 
 def callback(ch, method, properties, body):
     """
@@ -25,9 +32,18 @@ def callback(ch, method, properties, body):
         properties: Properties
         body: Message body (JSON string)
     """
-    message = json.loads(body)
-    logger.info(f"Received message: {message}")
-    ch.basic_ack(delivery_tag=method.delivery_tag)
+    try:
+        message = json.loads(body)
+        item_type = QUEUE_CONFIG.get(method.routing_key, 'unknown')
+        logger.info(f"Received {item_type} message: {message}")
+        # Perform simple operations or analytics here if needed
+        ch.basic_ack(delivery_tag=method.delivery_tag)
+    except json.JSONDecodeError as e:
+        logger.error(f"Failed to decode JSON: {e}")
+        ch.basic_nack(delivery_tag=method.delivery_tag, requeue=False)
+    except Exception as e:
+        logger.error(f"An error occurred while processing the message: {e}")
+        ch.basic_nack(delivery_tag=method.delivery_tag, requeue=False)
 
 def main():
     """
@@ -36,8 +52,9 @@ def main():
     try:
         connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
         channel = connection.channel()
-        channel.queue_declare(queue='auction_queue', durable=True)
-        channel.basic_consume(queue='auction_queue', on_message_callback=callback)
+        for queue_name in QUEUE_CONFIG.keys():
+            channel.queue_declare(queue=queue_name, durable=True)
+            channel.basic_consume(queue=queue_name, on_message_callback=callback)
         
         logger.info("Starting consumer. Waiting for messages...")
         channel.start_consuming()
@@ -51,3 +68,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
