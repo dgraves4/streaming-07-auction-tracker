@@ -10,7 +10,7 @@ This project is a real-time auction tracking system using RabbitMQ to stream, pr
 - **consumer_v2.0.py**: Enhanced to read from multiple queues and log messages based on item type.
 - **producer_v3.0.py**: Continuously sends messages with an open RabbitMQ connection.
 - **consumer_v3.0.py**: Maintains a rolling window of bids from multiple queues.
-- **consumer_v4.0.py**: Reads messages from multiple queues, maintains a rolling window, and sends email alerts for high bids.
+- **consumer_v4.0.py**: Reads messages from multiple queues, maintains a rolling window, and sends email alerts for high bids.  
 - **emailer.py**: Script to send email alerts. (Only used with consumer_v4.0 in this project)
 - **.env.toml**: Configuration file for storing email credentials and "secrets" (only used with consumer_v4.0 and not included in version control).
 - **util_logger.py**: Sets up logging for the project.
@@ -283,8 +283,11 @@ Version 4 Outputs:
 - ![Auction Email Alert](images/AuctionEmailAlerts.png)
 
 RabbitMQ Admin:
-- ![RabbitMQ Admin Example](images/RabbitMQAdmin1.0.png)
-
+- ![RabbitMQ Admin v1](images/RabbitMQAdmin1.0.png)
+- ![RabbitMQ Admin v2](images/RabbitMQAdminV2.png)
+- ![RabbitMQ Admin v3](images/RabbitMQAdminV3.png)
+- ![RabbitMQ Admin v3](images/RabbitMQAdminV3(2).png)
+- 
 Logging Examples:
 - ![Producer Log](images/producer1.0log.png)
 - ![Consumer Log](images/consumer1.0log.png)
@@ -292,4 +295,44 @@ Logging Examples:
 Close Connection Terminal:
 - ![Producer Closed Connection](images/producer_connection_closed.png)
 
-## Sources 
+## Sources
+
+- **Instructor Repositories**
+- [Producer with Multiple Consumers](https://github.com/denisecase/streaming-04-multiple-consumers)
+
+- **RabbitMQ**
+  - [RabbitMQ Official Documentation](https://www.rabbitmq.com/documentation.html)
+
+- **Faker Library**: 
+  - [Faker Library Documentation](https://faker.readthedocs.io/en/master/)
+
+- **pika**: 
+  - [Pika Documentation](https://pika.readthedocs.io/en/stable/)
+
+- **smtplib**
+  - [smtplib Documentation](https://docs.python.org/3/library/smtplib.html)
+
+- **collections.deque**
+  - [deque class Documentation](https://docs.python.org/3/library/collections.html#collections.deque)
+
+- **json**
+  - [JSON Module Documentation](https://docs.python.org/3/library/json.html)
+
+- **random**
+  - [Random Module Documentation](https://docs.python.org/3/library/random.html)
+
+- **datetime**
+  - [Datetime Module Documentation](https://docs.python.org/3/library/datetime.html)
+
+- **venv**
+  - [Python Virtual Environments Documentation](https://docs.python.org/3/library/venv.html)
+
+- **tomllib**
+  - [tomllib Documentation](https://docs.python.org/3/library/tomllib.html)
+
+- **Email and Security**
+  - [Setting Up Gmail for Sending Emails](https://support.google.com/mail/answer/7126229?hl=en)
+  - [Creating App Passwords](https://support.google.com/accounts/answer/185833?hl=en)
+
+- **Real-Time Data Streaming and Processing**
+  - [Real-Time Messaging with RabbitMQ](https://www.rabbitmq.com/tutorials/tutorial-one-python.html)
