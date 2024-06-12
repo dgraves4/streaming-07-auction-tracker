@@ -1,6 +1,6 @@
 # streaming-07-auction-tracker
 
-This project is a real-time auction tracking system using RabbitMQ to stream, process, and analyze bid data. It generates synthetic bid messages and processes them to simulate a live auction environment using custom producer and consumer scripts.
+This project is a real-time auction tracking system using RabbitMQ to stream and process bid data. It generates synthetic bid messages and processes them to simulate a live auction environment using custom producer and consumer scripts and also incorporates a high-bid email alert system.
 
 ## Repository Structure
 
@@ -45,7 +45,7 @@ This project is a real-time auction tracking system using RabbitMQ to stream, pr
 
 ### 1. Prerequisites
 
-- Python: Ensure you have Python 3.10 or later installed.
+- Python: Ensure you have Python 3.11 or later installed.
 - RabbitMQ: Ensure RabbitMQ is installed and running on localhost. Visit [RabbitMQ Admin Interface](http://localhost:15672).
 
 ### 2. Clone the Repository
