@@ -12,7 +12,6 @@ import sys
 import webbrowser
 import json
 from faker import Faker
-import logging
 import random  
 from util_logger import setup_logger
 from datetime import datetime  
