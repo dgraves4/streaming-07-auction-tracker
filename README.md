@@ -266,8 +266,30 @@ python consumer_v1.0.py
 
 ## Screenshots
 
-1. RabbitMQ Admin Interface: 
+Version 1 Outputs:
+- ![Producer v1 Console Output](images/producer_1.0output.png)
+- ![Consumer v1 Console Output](images/consumer_1.0output.png)
 
-2. Console Outputs:
+Version 2 Outputs:
+- ![Producer v2 Console Output](images/producer_2.0output.png)
+- ![Consumer v2 Console Output](images/consumer_2.0output.png)
+
+Version 3 Outputs:
+- ![Producer v3 Console Output](images/producer_3.0output.png)
+- ![Consumer v3 Console Output](images/consumer_3.0output.png)
+
+Version 4 Outputs:
+- ![Consumer v4 Console Output](images/consumer_4.0output.png)
+- ![Auction Email Alert](images/AuctionEmailAlerts.png)
+
+RabbitMQ Admin:
+- ![RabbitMQ Admin Example](images/RabbitMQAdmin1.0.png)
+
+Logging Examples:
+- ![Producer Log](images/producer1.0log.png)
+- ![Consumer Log](images/consumer1.0log.png)
+
+Close Connection Terminal:
+- ![Producer Closed Connection](images/producer_connection_closed.png)
 
 ## Sources 
