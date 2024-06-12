@@ -10,6 +10,9 @@ This project is a real-time auction tracking system using RabbitMQ to stream, pr
 - **consumer_v2.0.py**: Enhanced to read from multiple queues and log messages based on item type.
 - **producer_v3.0.py**: Continuously sends messages with an open RabbitMQ connection.
 - **consumer_v3.0.py**: Maintains a rolling window of bids from multiple queues.
+- **consumer_v4.0.py**: Reads messages from multiple queues, maintains a rolling window, and sends email alerts for high bids.
+- **emailer.py**: Script to send email alerts. (Only used with consumer_v4.0 in this project)
+- **.env.toml**: Configuration file for storing email credentials and "secrets" (only used with consumer_v4.0 and not included in version control).
 - **util_logger.py**: Sets up logging for the project.
 - **README.md**: Project documentation (this file).
 
@@ -19,6 +22,7 @@ This project is a real-time auction tracking system using RabbitMQ to stream, pr
 - **Simulate Bidding**: Use synthetic data to mimic an auction scenario.
 - **Implement RabbitMQ**: Use RabbitMQ for message queuing.
 - **Logging and Monitoring**: Use logging for visibility and debugging.
+- **Email Alerts**: Send email alerts for high bids.
 
 ## Data Sources
 
@@ -33,6 +37,9 @@ This project is a real-time auction tracking system using RabbitMQ to stream, pr
 - json: Handling JSON data
 - random: Generates random values
 - datetime: Handles dates and times
+- tomllib: Reading TOML files for email configuration (requires Python 3.11+)
+- email: Handy EmailMessage class
+- smtplib: For transmission via SMTP
 
 ## Project Setup
 
@@ -67,11 +74,12 @@ pip install pika faker
 pip freeze > requirements.txt
 ```
 
-### 5.  Update .gitignore file with environment to leave it out of version control:
+### 5.  Update .gitignore file with environment and .env.toml to leave these out of version control:
 ```bash
 echo ".venv/" >> .gitignore
+echo ".env.toml" >> .gitignore
 ```
-or simply add .venv into the .gitignore file. 
+or simply add .venv and .env.toml into the .gitignore file. 
 
 ## Running the Project
 Step-by-Step Execution Guide
@@ -178,6 +186,49 @@ Rolling window for electronics updated. Size: ..., Latest bid: ... at ...
 ```
 A log file will also be generated in logs/consumer_v3.0.log.
 
+Version 4.0 (Consumer only- will still use producer_v3.0.py)
+
+1. Run Producer v3.0
+
+- Use producer_v3.0.py as it already supports continuous messaging with an open connection.
+
+2. Run Consumer v4.0
+- Reads messages from multiple RabbitMQ queues, maintains a rolling window, and sends email alerts for high bids using configuration settings from .env.toml and emailer.py.
+
+```bash
+python consumer_v4.0.py
+```
+
+Expected console output:
+
+```bash
+Starting consumer. Waiting for messages...
+Received art message: 931.43 at 2024-06-12T03:57:06.441262+00:00
+Rolling window for art updated. Size: 5, Latest bid: 931.43 at 2024-06-12T03:57:06.441262+00:00
+High bid alert: 931.43 at 2024-06-12T03:57:06.441262+00:00. Sending email alert.
+========================================
+Prepared Email Message:
+========================================
+
+From: ttesterson397@gmail.com
+To: ttesterson397@gmail.com
+Reply-to: ttesterson397@gmail.com
+Subject: High Bid Alert: Art - $931.43
+Content-Type: text/plain; charset="utf-8"
+Content-Transfer-Encoding: 7bit
+MIME-Version: 1.0
+
+A high bid of $931.43 was placed on art at 2024-06-12T03:57:06.441262+00:00.
+
+========================================
+SMTP server created: <smtplib.SMTP object at 0x000001FFF78E8380>
+========================================
+TLS started. Will attempt to login.
+Successfully logged in as ttesterson397@gmail.com.
+Message sent.
+Session terminated.
+========================================
+```
 
 ### Simulated Run
 
@@ -192,8 +243,9 @@ python producer_v1.0.py
 ```
 - If using producer_v1.0.py, it will send a single message and close the connection.
 - If using producer_v2.0.py or producer_v3.0.py, it will continuously send messages at intervals until you manually stop it (ctrl+c in terminal).
+- When prompted in terminal, type in y and hit enter to open RabbitMQ Admin and monitor the queue status.
 
-3. **Run Consumer**: Open another terminal and execute the consumer script. This will read and log messages from the RabbitMQ queues and maintain a rolling window if using consumer_v3.0.py.
+3. **Run Consumer**: Open another terminal and execute the consumer script. This will read and log messages from the RabbitMQ queues and maintain a rolling window if using consumer_v3.0.py or consumer_v4.0.py.
 
 ```bash
 python consumer_v1.0.py
@@ -201,13 +253,16 @@ python consumer_v1.0.py
 - consumer_v1.0.py: will process and log each received message.
 - consumer_v2.0.py: reads from multiple queues and logs messages based on item type.
 - consumer_v3.0.py: will update a rolling window of the last few bids and log updates.
+- consumer_v4.0.py: Will update a rolling window and send email alerts for high bids.
 
-- ALL consumers must be deactivated manually (using ctrl+c in terminal), otherwise, they will continue to listen for messages. 
+- NOTE that ALL consumers must be deactivated manually (using ctrl+c in terminal), otherwise, they will continue to listen for messages. 
 
 4. **Verify**:
 - Queue Status: Check the status of your queues in the RabbitMQ admin interface. Ensure that messages are being sent and recieved as expected.
 
 - Logs: Review the logs generated by both producer and consumer scripts to confirm successful message handling.
+
+- Email Alerts: Check your email inbox for alerts if using consumer_v4.0.py.
 
 ## Screenshots
 

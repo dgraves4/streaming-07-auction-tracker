@@ -6,3 +6,41 @@
 2024-06-11 20:55:41,449.consumer_v4.0.INFO Working dir: C:\Users\derek\OneDrive\Documents\Streaming Data\Week 7\streaming-07-auction-tracker
 2024-06-11 20:55:41,449.consumer_v4.0.INFO ==================================================
 2024-06-11 20:55:41,466.consumer_v4.0.INFO Starting consumer. Waiting for messages...
+2024-06-11 20:56:06,414.consumer_v4.0.INFO Received electronics message: 222.59 at 2024-06-12T03:56:06.410536+00:00
+2024-06-11 20:56:06,414.consumer_v4.0.INFO Rolling window for electronics updated. Size: 1, Latest bid: 222.59 at 2024-06-12T03:56:06.410536+00:00
+2024-06-11 20:56:11,415.consumer_v4.0.INFO Received art message: 871.83 at 2024-06-12T03:56:11.414289+00:00
+2024-06-11 20:56:11,415.consumer_v4.0.INFO Rolling window for art updated. Size: 1, Latest bid: 871.83 at 2024-06-12T03:56:11.414289+00:00
+2024-06-11 20:56:11,415.consumer_v4.0.INFO High bid alert: 871.83 at 2024-06-12T03:56:11.414289+00:00. Sending email alert.
+2024-06-11 20:56:16,417.consumer_v4.0.INFO Received furniture message: 641.97 at 2024-06-12T03:56:16.416498+00:00
+2024-06-11 20:56:16,417.consumer_v4.0.INFO Rolling window for furniture updated. Size: 1, Latest bid: 641.97 at 2024-06-12T03:56:16.416498+00:00
+2024-06-11 20:56:21,420.consumer_v4.0.INFO Received art message: 885.48 at 2024-06-12T03:56:21.418331+00:00
+2024-06-11 20:56:21,420.consumer_v4.0.INFO Rolling window for art updated. Size: 2, Latest bid: 885.48 at 2024-06-12T03:56:21.418331+00:00
+2024-06-11 20:56:21,420.consumer_v4.0.INFO High bid alert: 885.48 at 2024-06-12T03:56:21.418331+00:00. Sending email alert.
+2024-06-11 20:56:26,425.consumer_v4.0.INFO Received art message: 920.66 at 2024-06-12T03:56:26.420378+00:00
+2024-06-11 20:56:26,425.consumer_v4.0.INFO Rolling window for art updated. Size: 3, Latest bid: 920.66 at 2024-06-12T03:56:26.420378+00:00
+2024-06-11 20:56:26,425.consumer_v4.0.INFO High bid alert: 920.66 at 2024-06-12T03:56:26.420378+00:00. Sending email alert.
+2024-06-11 20:56:31,425.consumer_v4.0.INFO Received electronics message: 695.94 at 2024-06-12T03:56:31.425129+00:00
+2024-06-11 20:56:31,425.consumer_v4.0.INFO Rolling window for electronics updated. Size: 2, Latest bid: 695.94 at 2024-06-12T03:56:31.425129+00:00
+2024-06-11 20:56:36,429.consumer_v4.0.INFO Received furniture message: 339.6 at 2024-06-12T03:56:36.426776+00:00
+2024-06-11 20:56:36,429.consumer_v4.0.INFO Rolling window for furniture updated. Size: 2, Latest bid: 339.6 at 2024-06-12T03:56:36.426776+00:00
+2024-06-11 20:56:41,431.consumer_v4.0.INFO Received art message: 903.93 at 2024-06-12T03:56:41.430474+00:00
+2024-06-11 20:56:41,432.consumer_v4.0.INFO Rolling window for art updated. Size: 4, Latest bid: 903.93 at 2024-06-12T03:56:41.430474+00:00
+2024-06-11 20:56:41,432.consumer_v4.0.INFO High bid alert: 903.93 at 2024-06-12T03:56:41.430474+00:00. Sending email alert.
+2024-06-11 20:56:46,433.consumer_v4.0.INFO Received furniture message: 937.63 at 2024-06-12T03:56:46.432659+00:00
+2024-06-11 20:56:46,433.consumer_v4.0.INFO Rolling window for furniture updated. Size: 3, Latest bid: 937.63 at 2024-06-12T03:56:46.432659+00:00
+2024-06-11 20:56:46,434.consumer_v4.0.INFO High bid alert: 937.63 at 2024-06-12T03:56:46.432659+00:00. Sending email alert.
+2024-06-11 20:56:51,435.consumer_v4.0.INFO Received art message: 149.19 at 2024-06-12T03:56:51.434479+00:00
+2024-06-11 20:56:51,435.consumer_v4.0.INFO Rolling window for art updated. Size: 5, Latest bid: 149.19 at 2024-06-12T03:56:51.434479+00:00
+2024-06-11 20:56:56,437.consumer_v4.0.INFO Received art message: 98.06 at 2024-06-12T03:56:56.436999+00:00
+2024-06-11 20:56:56,438.consumer_v4.0.INFO Rolling window for art updated. Size: 5, Latest bid: 98.06 at 2024-06-12T03:56:56.436999+00:00
+2024-06-11 20:57:01,440.consumer_v4.0.INFO Received art message: 168.9 at 2024-06-12T03:57:01.439144+00:00
+2024-06-11 20:57:01,441.consumer_v4.0.INFO Rolling window for art updated. Size: 5, Latest bid: 168.9 at 2024-06-12T03:57:01.439144+00:00
+2024-06-11 20:57:06,443.consumer_v4.0.INFO Received art message: 931.43 at 2024-06-12T03:57:06.441262+00:00
+2024-06-11 20:57:06,443.consumer_v4.0.INFO Rolling window for art updated. Size: 5, Latest bid: 931.43 at 2024-06-12T03:57:06.441262+00:00
+2024-06-11 20:57:06,443.consumer_v4.0.INFO High bid alert: 931.43 at 2024-06-12T03:57:06.441262+00:00. Sending email alert.
+2024-06-11 20:57:11,446.consumer_v4.0.INFO Received furniture message: 747.76 at 2024-06-12T03:57:11.443733+00:00
+2024-06-11 20:57:11,446.consumer_v4.0.INFO Rolling window for furniture updated. Size: 4, Latest bid: 747.76 at 2024-06-12T03:57:11.443733+00:00
+2024-06-11 20:57:16,447.consumer_v4.0.INFO Received electronics message: 650.07 at 2024-06-12T03:57:16.446812+00:00
+2024-06-11 20:57:16,447.consumer_v4.0.INFO Rolling window for electronics updated. Size: 3, Latest bid: 650.07 at 2024-06-12T03:57:16.446812+00:00
+2024-06-11 20:57:21,450.consumer_v4.0.INFO Received electronics message: 619.81 at 2024-06-12T03:57:21.448919+00:00
+2024-06-11 20:57:21,451.consumer_v4.0.INFO Rolling window for electronics updated. Size: 4, Latest bid: 619.81 at 2024-06-12T03:57:21.448919+00:00
