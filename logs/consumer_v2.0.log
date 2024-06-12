@@ -1,0 +1,9 @@
+2024-06-11 17:50:41,269.consumer_v2.0.INFO ==================================================
+2024-06-11 17:50:41,269.consumer_v2.0.INFO Today is 2024-06-11 at 05:50 PM
+2024-06-11 17:50:41,269.consumer_v2.0.INFO Running on: nt Windows 11
+2024-06-11 17:50:41,269.consumer_v2.0.INFO Python version:  3.12.2
+2024-06-11 17:50:41,269.consumer_v2.0.INFO Python path: C:\Users\derek\OneDrive\Documents\Streaming Data\Week 7\streaming-07-auction-tracker\.venv
+2024-06-11 17:50:41,270.consumer_v2.0.INFO Working dir: C:\Users\derek\OneDrive\Documents\Streaming Data\Week 7\streaming-07-auction-tracker
+2024-06-11 17:50:41,270.consumer_v2.0.INFO ==================================================
+2024-06-11 17:50:41,287.consumer_v2.0.INFO Starting consumer. Waiting for messages...
+2024-06-11 17:50:41,288.consumer_v2.0.INFO Received furniture message: {'bidder_id': '4d15c1d8-f67b-4dbe-bb20-b3ea9191d294', 'bid_amount': 215.91, 'timestamp': '2024-06-12T00:48:21.786146+00:00', 'item': 'furniture', 'bidder_name': 'Michele Lloyd', 'bidder_email': 'alicia05@example.com'}
