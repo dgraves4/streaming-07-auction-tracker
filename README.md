@@ -298,7 +298,7 @@ Close Connection Terminal:
 ## Sources
 
 - **Instructor Repositories**
-- [Producer with Multiple Consumers](https://github.com/denisecase/streaming-04-multiple-consumers)
+  - [Producer with Multiple Consumers](https://github.com/denisecase/streaming-04-multiple-consumers)
 
 - **RabbitMQ**
   - [RabbitMQ Official Documentation](https://www.rabbitmq.com/documentation.html)
