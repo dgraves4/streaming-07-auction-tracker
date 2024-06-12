@@ -1,76 +1,28 @@
-2024-06-11 18:47:47,665.producer_v3.0.INFO ==================================================
-2024-06-11 18:47:47,666.producer_v3.0.INFO Today is 2024-06-11 at 06:47 PM
-2024-06-11 18:47:47,666.producer_v3.0.INFO Running on: nt Windows 11
-2024-06-11 18:47:47,666.producer_v3.0.INFO Python version:  3.12.2
-2024-06-11 18:47:47,666.producer_v3.0.INFO Python path: C:\Users\derek\OneDrive\Documents\Streaming Data\Week 7\streaming-07-auction-tracker\.venv
-2024-06-11 18:47:47,666.producer_v3.0.INFO Working dir: C:\Users\derek\OneDrive\Documents\Streaming Data\Week 7\streaming-07-auction-tracker
-2024-06-11 18:47:47,666.producer_v3.0.INFO ==================================================
-2024-06-11 18:48:05,529.producer_v3.0.INFO Opened RabbitMQ Admin site.
-2024-06-11 18:48:05,626.producer_v3.0.INFO Producer started. Sending messages to RabbitMQ queues.
-2024-06-11 18:48:05,628.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 323.42 at 2024-06-12T01:48:05.627700+00:00
-2024-06-11 18:48:10,631.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 144.16 at 2024-06-12T01:48:10.629875+00:00
-2024-06-11 18:48:15,632.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 939.0 at 2024-06-12T01:48:15.631638+00:00
-2024-06-11 18:48:20,633.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 86.89 at 2024-06-12T01:48:20.633453+00:00
-2024-06-11 18:48:25,635.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 18.01 at 2024-06-12T01:48:25.635047+00:00
-2024-06-11 18:48:30,638.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 82.1 at 2024-06-12T01:48:30.636945+00:00
-2024-06-11 18:48:35,641.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 16.92 at 2024-06-12T01:48:35.639686+00:00
-2024-06-11 18:48:40,642.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 138.13 at 2024-06-12T01:48:40.641908+00:00
-2024-06-11 18:48:45,644.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 209.41 at 2024-06-12T01:48:45.643811+00:00
-2024-06-11 18:48:50,646.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 926.79 at 2024-06-12T01:48:50.646191+00:00
-2024-06-11 18:48:55,649.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 295.43 at 2024-06-12T01:48:55.648031+00:00
-2024-06-11 18:49:00,650.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 513.99 at 2024-06-12T01:49:00.650071+00:00
-2024-06-11 18:49:05,652.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 346.06 at 2024-06-12T01:49:05.651685+00:00
-2024-06-11 18:49:10,655.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 293.65 at 2024-06-12T01:49:10.654192+00:00
-2024-06-11 18:49:15,658.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 636.12 at 2024-06-12T01:49:15.656767+00:00
-2024-06-11 18:49:20,659.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 564.69 at 2024-06-12T01:49:20.659765+00:00
-2024-06-11 18:49:25,663.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 715.59 at 2024-06-12T01:49:25.661622+00:00
-2024-06-11 18:49:30,665.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 17.29 at 2024-06-12T01:49:30.664701+00:00
-2024-06-11 18:49:35,667.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 665.64 at 2024-06-12T01:49:35.666476+00:00
-2024-06-11 18:49:40,670.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 825.2 at 2024-06-12T01:49:40.668774+00:00
-2024-06-11 18:49:45,672.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 365.63 at 2024-06-12T01:49:45.671413+00:00
-2024-06-11 18:49:50,674.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 619.68 at 2024-06-12T01:49:50.673465+00:00
-2024-06-11 18:49:55,676.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 502.22 at 2024-06-12T01:49:55.675673+00:00
-2024-06-11 18:50:00,680.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 33.92 at 2024-06-12T01:50:00.677807+00:00
-2024-06-11 18:50:05,682.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 96.7 at 2024-06-12T01:50:05.681551+00:00
-2024-06-11 18:50:10,684.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 458.53 at 2024-06-12T01:50:10.683497+00:00
-2024-06-11 18:50:15,686.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 741.65 at 2024-06-12T01:50:15.685446+00:00
-2024-06-11 18:50:20,688.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 253.04 at 2024-06-12T01:50:20.686950+00:00
-2024-06-11 18:50:25,691.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 543.73 at 2024-06-12T01:50:25.689149+00:00
-2024-06-11 18:50:30,694.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 236.37 at 2024-06-12T01:50:30.693156+00:00
-2024-06-11 18:50:35,695.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 522.05 at 2024-06-12T01:50:35.695260+00:00
-2024-06-11 18:50:40,699.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 810.44 at 2024-06-12T01:50:40.697131+00:00
-2024-06-11 18:50:45,700.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 761.48 at 2024-06-12T01:50:45.699906+00:00
-2024-06-11 18:50:50,703.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 587.04 at 2024-06-12T01:50:50.701993+00:00
-2024-06-11 18:50:55,704.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 244.22 at 2024-06-12T01:50:55.703617+00:00
-2024-06-11 18:51:00,706.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 853.9 at 2024-06-12T01:51:00.705895+00:00
-2024-06-11 18:51:05,709.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 706.92 at 2024-06-12T01:51:05.708020+00:00
-2024-06-11 18:51:10,710.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 626.19 at 2024-06-12T01:51:10.709544+00:00
-2024-06-11 18:51:15,711.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 847.24 at 2024-06-12T01:51:15.711220+00:00
-2024-06-11 18:51:20,714.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 83.13 at 2024-06-12T01:51:20.713159+00:00
-2024-06-11 18:51:25,717.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 27.06 at 2024-06-12T01:51:25.715636+00:00
-2024-06-11 18:51:30,719.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 13.3 at 2024-06-12T01:51:30.718139+00:00
-2024-06-11 18:51:35,721.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 406.46 at 2024-06-12T01:51:35.720793+00:00
-2024-06-11 18:51:40,723.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 710.34 at 2024-06-12T01:51:40.722621+00:00
-2024-06-11 18:51:45,725.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 676.58 at 2024-06-12T01:51:45.724268+00:00
-2024-06-11 18:51:50,727.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 966.05 at 2024-06-12T01:51:50.726965+00:00
-2024-06-11 18:51:55,730.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 81.8 at 2024-06-12T01:51:55.729448+00:00
-2024-06-11 18:52:00,732.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 599.87 at 2024-06-12T01:52:00.732127+00:00
-2024-06-11 18:52:05,734.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 452.76 at 2024-06-12T01:52:05.733995+00:00
-2024-06-11 18:52:10,737.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 711.25 at 2024-06-12T01:52:10.736008+00:00
-2024-06-11 18:52:15,738.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 261.09 at 2024-06-12T01:52:15.737702+00:00
-2024-06-11 18:52:20,740.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 90.81 at 2024-06-12T01:52:20.739733+00:00
-2024-06-11 18:52:25,742.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 851.58 at 2024-06-12T01:52:25.741790+00:00
-2024-06-11 18:52:30,745.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 564.3 at 2024-06-12T01:52:30.743993+00:00
-2024-06-11 18:52:35,747.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 330.1 at 2024-06-12T01:52:35.746305+00:00
-2024-06-11 18:52:40,748.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 878.61 at 2024-06-12T01:52:40.748368+00:00
-2024-06-11 18:52:45,752.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 190.2 at 2024-06-12T01:52:45.751380+00:00
-2024-06-11 18:52:50,754.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 369.59 at 2024-06-12T01:52:50.753808+00:00
-2024-06-11 18:52:55,757.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 405.86 at 2024-06-12T01:52:55.756232+00:00
-2024-06-11 18:53:00,759.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 509.69 at 2024-06-12T01:53:00.758717+00:00
-2024-06-11 18:53:05,761.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 780.77 at 2024-06-12T01:53:05.760571+00:00
-2024-06-11 18:53:10,763.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 244.75 at 2024-06-12T01:53:10.762402+00:00
-2024-06-11 18:53:15,766.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 710.01 at 2024-06-12T01:53:15.764089+00:00
-2024-06-11 18:53:20,768.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 903.8 at 2024-06-12T01:53:20.768003+00:00
-2024-06-11 18:53:22,998.producer_v3.0.INFO Producer interrupted. Exiting.
-2024-06-11 18:53:22,999.producer_v3.0.INFO Closed RabbitMQ channel.
-2024-06-11 18:53:23,001.producer_v3.0.INFO Closed RabbitMQ connection.
+2024-06-11 20:56:04,244.producer_v3.0.INFO ==================================================
+2024-06-11 20:56:04,244.producer_v3.0.INFO Today is 2024-06-11 at 08:56 PM
+2024-06-11 20:56:04,245.producer_v3.0.INFO Running on: nt Windows 11
+2024-06-11 20:56:04,245.producer_v3.0.INFO Python version:  3.12.2
+2024-06-11 20:56:04,245.producer_v3.0.INFO Python path: C:\Users\derek\OneDrive\Documents\Streaming Data\Week 7\streaming-07-auction-tracker\.venv
+2024-06-11 20:56:04,245.producer_v3.0.INFO Working dir: C:\Users\derek\OneDrive\Documents\Streaming Data\Week 7\streaming-07-auction-tracker
+2024-06-11 20:56:04,246.producer_v3.0.INFO ==================================================
+2024-06-11 20:56:06,272.producer_v3.0.INFO Opened RabbitMQ Admin site.
+2024-06-11 20:56:06,410.producer_v3.0.INFO Producer started. Sending messages to RabbitMQ queues.
+2024-06-11 20:56:06,412.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 222.59 at 2024-06-12T03:56:06.410536+00:00
+2024-06-11 20:56:11,415.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 871.83 at 2024-06-12T03:56:11.414289+00:00
+2024-06-11 20:56:16,417.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 641.97 at 2024-06-12T03:56:16.416498+00:00
+2024-06-11 20:56:21,419.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 885.48 at 2024-06-12T03:56:21.418331+00:00
+2024-06-11 20:56:26,423.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 920.66 at 2024-06-12T03:56:26.420378+00:00
+2024-06-11 20:56:31,425.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 695.94 at 2024-06-12T03:56:31.425129+00:00
+2024-06-11 20:56:36,428.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 339.6 at 2024-06-12T03:56:36.426776+00:00
+2024-06-11 20:56:41,431.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 903.93 at 2024-06-12T03:56:41.430474+00:00
+2024-06-11 20:56:46,433.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 937.63 at 2024-06-12T03:56:46.432659+00:00
+2024-06-11 20:56:51,434.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 149.19 at 2024-06-12T03:56:51.434479+00:00
+2024-06-11 20:56:56,437.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 98.06 at 2024-06-12T03:56:56.436999+00:00
+2024-06-11 20:57:01,440.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 168.9 at 2024-06-12T03:57:01.439144+00:00
+2024-06-11 20:57:06,442.producer_v3.0.INFO Sent message to auction_queue_art: Bid Amount: 931.43 at 2024-06-12T03:57:06.441262+00:00
+2024-06-11 20:57:11,445.producer_v3.0.INFO Sent message to auction_queue_furniture: Bid Amount: 747.76 at 2024-06-12T03:57:11.443733+00:00
+2024-06-11 20:57:16,447.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 650.07 at 2024-06-12T03:57:16.446812+00:00
+2024-06-11 20:57:21,450.producer_v3.0.INFO Sent message to auction_queue_electronics: Bid Amount: 619.81 at 2024-06-12T03:57:21.448919+00:00
+2024-06-11 20:57:25,083.producer_v3.0.INFO Producer interrupted. Exiting.
+2024-06-11 20:57:25,084.producer_v3.0.INFO Closed RabbitMQ channel.
+2024-06-11 20:57:25,085.producer_v3.0.INFO Closed RabbitMQ connection.
