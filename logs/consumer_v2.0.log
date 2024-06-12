@@ -7,3 +7,4 @@
 2024-06-11 17:50:41,270.consumer_v2.0.INFO ==================================================
 2024-06-11 17:50:41,287.consumer_v2.0.INFO Starting consumer. Waiting for messages...
 2024-06-11 17:50:41,288.consumer_v2.0.INFO Received furniture message: {'bidder_id': '4d15c1d8-f67b-4dbe-bb20-b3ea9191d294', 'bid_amount': 215.91, 'timestamp': '2024-06-12T00:48:21.786146+00:00', 'item': 'furniture', 'bidder_name': 'Michele Lloyd', 'bidder_email': 'alicia05@example.com'}
+2024-06-11 18:13:08,291.consumer_v2.0.ERROR Connection to RabbitMQ server failed: No activity or too many missed heartbeats in the last 60 seconds
